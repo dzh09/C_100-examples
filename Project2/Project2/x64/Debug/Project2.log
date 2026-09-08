@@ -1,0 +1,17 @@
+﻿MSBUILD : error : 这是 MSBuild 中未经处理的异常 -- 请对现有问题投赞成票或在 https://aka.ms/msbuild/unhandled 上提交新问题
+MSBUILD : error :     System.TypeInitializationException: “Microsoft.Build.Collections.CopyOnWritePropertyDictionary`1”的类型初始值设定项引发异常。 ---> System.IO.FileLoadException: Could not load file or assembly 'System.Collections.Immutable, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 页面文件太小，无法完成操作。 (Exception from HRESULT: 0x800705AF)
+MSBUILD : error :    在 Microsoft.Build.Collections.CopyOnWritePropertyDictionary`1..cctor()
+MSBUILD : error :    --- 内部异常堆栈跟踪的结尾 ---
+MSBUILD : error :    在 Microsoft.Build.Execution.ProjectItemDefinitionInstance.Microsoft.Build.Evaluation.IItemDefinition<Microsoft.Build.Execution.ProjectMetadataInstance>.SetMetadata(ProjectMetadataElement xml, String evaluatedValue, ProjectMetadataInstance predecessor)
+MSBUILD : error :    在 Microsoft.Build.Evaluation.Evaluator`4.EvaluateItemDefinitionElement(ProjectItemDefinitionElement itemDefinitionElement)
+MSBUILD : error :    在 Microsoft.Build.Evaluation.Evaluator`4.EvaluateItemDefinitionGroupElement(ProjectItemDefinitionGroupElement itemDefinitionGroupElement)
+MSBUILD : error :    在 Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+MSBUILD : error :    在 Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, Project project, ProjectRootElement root, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ICollection`1 propertiesFromCommandLine, ILoggingService loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, IDirectoryCacheFactory directoryCacheFactory, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResolverService sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+MSBUILD : error :    在 Microsoft.Build.Execution.ProjectInstance.Initialize(ProjectRootElement xml, IDictionary`2 globalProperties, String explicitToolsVersion, String explicitSubToolsetVersion, Int32 visualStudioVersionFromSolution, BuildParameters buildParameters, ILoggingService loggingService, BuildEventContext buildEventContext, ISdkResolverService sdkResolverService, Int32 submissionId, Nullable`1 projectLoadSettings, EvaluationContext evaluationContext, IDirectoryCacheFactory directoryCacheFactory)
+MSBUILD : error :    在 Microsoft.Build.BackEnd.BuildRequestConfiguration.<>c__DisplayClass61_0.<LoadProjectIntoConfiguration>b__0()
+MSBUILD : error :    在 Microsoft.Build.BackEnd.BuildRequestConfiguration.InitializeProject(BuildParameters buildParameters, Func`1 loadProjectFromFile)
+MSBUILD : error :    在 Microsoft.Build.BackEnd.RequestBuilder.<BuildProject>d__67.MoveNext()
+MSBUILD : error : --- 引发异常的上一位置中堆栈跟踪的末尾 ---
+MSBUILD : error :    在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+MSBUILD : error :    在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+MSBUILD : error :    在 Microsoft.Build.BackEnd.RequestBuilder.<RequestThreadProc>d__58.MoveNext()
