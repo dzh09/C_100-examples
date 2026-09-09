@@ -1,0 +1,6 @@
+﻿  C4.c
+E:\C_review\C_100\Project4\C4.c(4,20): warning C4554: “&”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+E:\C_review\C_100\Project4\C4.c(4,46): warning C4554: “&”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+E:\C_review\C_100\Project4\C4.c(16,17): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+E:\C_review\C_100\Project4\C4.c(8,1): warning C4715: “is_leapyear”: 不是所有的控件路径都返回值
+  Project4.vcxproj -> E:\C_review\C_100\Project4\x64\Debug\Project4.exe
