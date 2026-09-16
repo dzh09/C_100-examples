@@ -1,0 +1,6 @@
+# Visual Studio 缓存
+.vs/
+*.user
+*.suo
+# Windows系统文件
+Thumbs.db
